@@ -17,15 +17,16 @@ public class Producto {
 	private String descripcion;
 	private String imagen;
 	private double precio;
-	private int  cantidad;
+	private int cantidad;
 	
 	@ManyToOne
 	private Usuario usuario;
 	
 	public Producto() {
-		
+
 	}
 
+	
 	public Producto(Integer id, String nombre, String descripcion, String imagen, double precio, int cantidad,
 			Usuario usuario) {
 		super();
@@ -37,6 +38,8 @@ public class Producto {
 		this.cantidad = cantidad;
 		this.usuario = usuario;
 	}
+
+
 
 	public Integer getId() {
 		return id;
@@ -101,5 +104,6 @@ public class Producto {
 		return "Producto [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", imagen=" + imagen
 				+ ", precio=" + precio + ", cantidad=" + cantidad + "]";
 	}
+	
 	
 }

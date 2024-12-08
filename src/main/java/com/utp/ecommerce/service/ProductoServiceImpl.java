@@ -11,10 +11,10 @@ import com.utp.ecommerce.repository.IProductoRepository;
 
 @Service
 public class ProductoServiceImpl implements ProductoService{
-
+	
 	@Autowired
 	private IProductoRepository productoRepository;
-	
+
 	@Override
 	public Producto save(Producto producto) {
 		return productoRepository.save(producto);
@@ -32,7 +32,7 @@ public class ProductoServiceImpl implements ProductoService{
 
 	@Override
 	public void delete(Integer id) {
-		productoRepository.deleteById(id);
+		productoRepository.deleteById(id);		
 	}
 
 	@Override

@@ -4,5 +4,5 @@ import com.utp.ecommerce.model.DetalleOrden;
 
 public interface IDetalleOrdenService {
 	DetalleOrden save (DetalleOrden detalleOrden);
-	
+
 }
